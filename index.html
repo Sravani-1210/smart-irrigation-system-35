@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Smart Irrigation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Irrigation System for Precision Farming</h1>
+        <form id="irrigation-form">
+            <div class="form-group">
+                <label for="soilMoisture">Soil Moisture Level (%):</label>
+                <input type="number" id="soilMoisture" name="soilMoisture" min="0" max="100" placeholder="Enter soil moisture">
+            </div>
+
+            <div class="form-group">
+                <label for="cropType">Select Crop Type:</label>
+                <select id="cropType" name="cropType">
+                    <option value="wheat">Wheat</option>
+                    <option value="rice">Rice</option>
+                    <option value="corn">Corn</option>
+                    <option value="cotton">Cotton</option>
+                    <option value="soybean">Soybean</option>
+                    <option value="sugarcane">Sugarcane</option>
+                    <option value="barley">Barley</option>
+                    <option value="potato">Potato</option>
+                    <option value="tomato">Tomato</option>
+                    <option value="sunflower">Sunflower</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="soilType">Select Soil Type:</label>
+                <select id="soilType" name="soilType">
+                    <option value="clay">Clay</option>
+                    <option value="sandy">Sandy</option>
+                    <option value="silty">Silty</option>
+                    <option value="loamy">Loamy</option>
+                    <option value="peaty">Peaty</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="weather">Select Weather Condition:</label>
+                <select id="weather" name="weather">
+                    <option value="sunny">Sunny</option>
+                    <option value="cloudy">Cloudy</option>
+                    <option value="rainy">Rainy</option>
+                    <option value="windy">Windy</option>
+                    <option value="stormy">Stormy</option>
+                </select>
+            </div>
+
+            <button type="button" onclick="calculateIrrigation()">Calculate Irrigation</button>
+        </form>
+
+        <div id="result">
+            <!-- Result will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
